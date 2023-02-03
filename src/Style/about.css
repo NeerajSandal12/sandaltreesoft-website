@@ -1,0 +1,42 @@
+.card{
+    /* width: 40%; */
+    display: flex;
+}
+.row{
+    display: flex;
+    /* flex-direction: row; */
+}
+.wrap-card{
+
+    justify-content: center;
+    align-items: center;
+    display: flex ;
+}
+@media screen and (max-width:940px) {
+    .wrap-card{
+        /* border: solid red; */
+        width: 70%;
+    }
+    .about-container{
+        width: 50%;
+    }
+    .about-container p{
+        font-size: .5rem;
+    }
+    .card{
+        width: 50%;
+        display: flex;
+    }
+}
+@media screen and (max-width:740px) {
+    .wrap-card{
+        width: 80%;
+        display: block;
+    }
+    .about-container{
+        width: 80%;
+    }
+    .about-container p{
+        font-size: .5rem;
+    }
+}
