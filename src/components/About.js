@@ -1,12 +1,16 @@
-import React from "react";
+import React, { useEffect } from "react";
 import '../Style/about.css'
-
+import Navbar from "./Navbar";
 const About = () => {
+  useEffect(()=>{
+    window.scrollTo(0,0);
+  })
   return (
     <>
-      <div>
-        <div className="service-section">
-          <h1>Welcome to Sandal Tree Soft</h1>
+      <div className="about">
+        {/* <Navbar/> */}
+        <div  id="about" className="service-section">
+          {/* <h1>Welcome to Sandal Tree Soft</h1> */}
           <p>Some text about who we are and what we do</p>
           <p>
             Our team members are expertise in 
@@ -15,8 +19,6 @@ const About = () => {
             solutions for any business
           </p>
         </div>
-        <h2 style={{textAlign:"center"}}>Our Services</h2>
-
         <h2 style={{textAlign:"center"}} >
           Our Team Work in Software Development
         </h2>

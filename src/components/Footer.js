@@ -6,6 +6,9 @@ import {BsLinkedin} from 'react-icons/bs'
 import { FaMapMarkerAlt } from "react-icons/fa";
 import { Link } from "react-router-dom";
 const Footer = () => {
+  // const changeOcc = (e) => {
+  //   window.scrollTo(0,0);
+  //   }
   return (
     <>
       <footer className="padding_4x">
@@ -19,9 +22,11 @@ const Footer = () => {
           </div>
           <div className="f-con-child-2">
             <span>About Us</span>
-            <Link to={"/about"}>About</Link>
-            <Link to={"/"}>Home</Link>
-            <Link to={"/contact"}>Contact</Link>
+            {/* <a onClick={changeOcc} href="/">Home</a> */}
+            <a  href="/">Home</a>
+            <a  href="#about">About</a>
+            <a  href="#contact">Contact</a>
+            <a  href="#services">Services</a>
           </div>
           <div className="f-con-child-3">
             <span>Follow US</span>

@@ -5,7 +5,7 @@ import { Link, Route, Routes } from "react-router-dom";
 const Home = () => {
   return (
     <>
-      <div className="home_con">
+      <div id="home" className="home_con">
         <div className="home_con_img">
           <div className="home-txt-con">
             <div className="home-text-1 animate__animated animate__pulse animate__slow animate__infinite">
@@ -21,7 +21,7 @@ const Home = () => {
               We can provide software solutions for any business
             </div>
             <div className=" home-text-3 ">
-              <Link to={"/about"}>Contact Us</Link>
+              <a href="#about">Contact Us</a>
             </div>
           </div>
         </div>

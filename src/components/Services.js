@@ -1,9 +1,11 @@
 import React from 'react'
 import '../Style/services.css'
+import Navbar from "./Navbar";
 
 const Services = () => {
   return (
-      <>
+      < div id='services'>
+        {/* <Navbar/> */}
         <div className="service-section">
           <h1>Welcome to Sandal Tree Soft</h1>
           <h1>Innovative Software Solutions</h1>
@@ -52,7 +54,7 @@ const Services = () => {
             </div>
         </div>
         </div>
-      </>
+      </div>
     
 
   )

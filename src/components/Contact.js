@@ -1,12 +1,21 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "../Style/contact.css";
+import Navbar from "./Navbar";
 import {FiPhoneCall} from 'react-icons/fi'
 import {CgMail} from 'react-icons/cg'
 import {FaMapMarkerAlt} from 'react-icons/fa'
+import { useParams } from "react-router-dom";
 
 const Contact = () => {
+
+// useEffect(()=>{
+// console.log("kdjd : "+ useParams())
+
+// })
+
   return (
-    <>
+    <div id="contact">
+      {/* <Navbar/> */}
       {/* <> */}
       <h2 style={{textAlign:"center"}} >Feel Free to Contact us</h2>
 
@@ -24,7 +33,7 @@ const Contact = () => {
       
       <div className="c-container">
        <div className="contact-box"> <h1></h1>
-        <h3><FiPhoneCall className="phone-icon"/> +91 81248 91454 </h3>
+        <h3><FiPhoneCall className="phone-icon"/> +91 73056 94672 </h3>
         <h3><CgMail className="gmail-icon"/> info@sandaltreesoft.com </h3>
         <h3>
           <FaMapMarkerAlt className="map-icon"/> 2a, 2nd floor Gat ko 1053, Ganesh nagar Syder park 3,
@@ -33,7 +42,7 @@ const Contact = () => {
       </div>
       </div>
       {/* </Wrapper> */}
-    </>
+    </div>
   );
 };
 
