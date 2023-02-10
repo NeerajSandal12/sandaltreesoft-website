@@ -7,6 +7,7 @@ import Contact from "./components/Contact";
 import About from "./components/About";
 import Services from "./components/Services";
 import Ser from "./components/ser";
+import 'bootstrap/dist/css/bootstrap.min.css';
 import { Route, Routes, useParams } from "react-router-dom";
 // useParams
 function App() {
@@ -15,19 +16,15 @@ function App() {
   return (
     <>
       <Navbar />
-      <Home/>
-      <Ser/>
-      {/* <Services/> */}
-      <About/>
-      <Contact/>
-      {/* <Routes>
+      
+     
+      <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/Contact" element={<Contact />} />
-        <Route path="/services" element={<Services />} />
+        <Route path="/services" element={<Ser />} />
         <Route path="*" element={<Error_404 />} />
       </Routes>
-      <Services /> */}
       <Footer />
     </>
   );

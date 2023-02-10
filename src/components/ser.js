@@ -5,14 +5,17 @@ const ser = () => {
     <div id="services">
       {" "}
         {/* <Navbar/> */}
-        <div className="service-section">
-          <h1>Innovative Software Solutions</h1>
+        <div className={Style.serSection}>
+        <h2 class={Style.sectionHeading}>Our Services</h2>
+          <h3>Innovative Software Solutions</h3>
           <p >We can provide the below services.</p>
+          
           <p >Resize the browser window to see that this page is responsive by the way.</p>
+          
         </div>
       <section>
         <div class={Style.row}>
-          <h2 class={Style.sectionHeading}>Our Services</h2>
+          
         </div>
         <div class={Style.row}>
           <div class={Style.column}>

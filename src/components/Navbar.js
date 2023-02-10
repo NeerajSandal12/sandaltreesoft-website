@@ -33,12 +33,12 @@ const Navbar = () => {
   useEffect(() => {
     if(top == "Home"){
     window.scrollTo(0,0);}
-    // if(top == "Services"){
-    //   window.scrollTo(0,500);}
-    //   if(top == "About"){
-    //     window.scrollTo(0,3000);}
-    //     if(top == "Contact"){
-    //       window.scrollTo(0,0);}
+    if(top == "Services"){
+      window.scrollTo(0,0);}
+      if(top == "About"){
+        window.scrollTo(0,0);}
+        if(top == "Contact"){
+          window.scrollTo(0,0);}
   }, [top]);
   useEffect(() => {
     const navBar = () => {
@@ -62,7 +62,7 @@ const Navbar = () => {
       <div id="navbar" className={isScroll ? "nav-main active" : "nav-main"}>
         <div className="nav-container">
           <div className="main-logo">
-            <a href="#"><img className="logo" src="logo.png" /></a>
+            {/* <a href="#"><img className="logo" src="logo.png" /></a>
             <span className="txt-org">Sandal Tree Soft</span>
             </div>
             <div className={click ? " main-menu-n-active n-active" : "main-menu"}>
@@ -70,8 +70,8 @@ const Navbar = () => {
               <a href="#services" onClick={changeOcc} >Services</a>
               <a href="#about" onClick={changeOcc} >About</a>
               <a href="#contact"onClick={changeOcc} >Contact</a>
-              </div>
-            {/* <Link to={"/"}>
+              </div> */}
+            <Link to={"/"}>
               <img className="logo" src="logo.png" />
             </Link>
             <span className="txt-org">Sandal Tree Soft</span>
@@ -89,7 +89,7 @@ const Navbar = () => {
             <Link onClick={changeOcc} to="services">
               Services
             </Link>
-          </div> */}
+          </div>
           <div onClick={() => setClick(!click)} className="right-side">
             {click ? <RxCross1 /> : <RxHamburgerMenu />}
            
