@@ -21,6 +21,10 @@ section{
     display: grid;
     place-items: center;
   }
+  .desc_p{
+    /* border: solid red; */
+    height: 190px;
+  }
   .row {
     display: flex;
     flex-wrap: wrap;
@@ -72,7 +76,7 @@ section{
     transition: 0.5s;
   }
   .card:hover {
-    background-position: 0 60%;
+    background-position: 0 55%;
   }
   .card:hover .iconwrapper {
     /* background-color: #ffffff; */

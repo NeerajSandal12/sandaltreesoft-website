@@ -22,12 +22,12 @@ const Home = () => {
               We can provide software solutions for any business
             </div>
             <div className=" home-text-3 ">
-              <a href="#about">Contact Us</a>
+              {/* <Link to="/contact">Contact Us</Link> */}
             </div>
           </div>
         </div>
       </div>
-    <Carousel variant="dark">
+    {/* <Carousel variant="dark">
       <Carousel.Item>
         <img
           className="d-block w-100"
@@ -64,7 +64,7 @@ const Home = () => {
         </Carousel.Caption>
       </Carousel.Item>
     </Carousel>
- 
+  */}
     </>
   );
 };

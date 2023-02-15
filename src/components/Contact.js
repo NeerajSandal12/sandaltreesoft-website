@@ -35,12 +35,13 @@ const handleSubmit =  (e)=>{
       return
     }
     let regex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
-    if (!regex.test(email)) {
-      toast.error("Enter valid Email");
+    
+    if (number.length!=10) {
+      toast.error("Enter valid number");
       return
     }
-    if (!number.length===10) {
-      toast.error("Enter valid number");
+    if (!regex.test(email)) {
+      toast.error("Enter valid Email");
       return
     }
     const res=  fetch("https://neeraj-aac67-default-rtdb.firebaseio.com/contactDb.json",{
@@ -108,10 +109,10 @@ const handleSubmit =  (e)=>{
         <div className="con-input-field">
         <h1>Send us a message</h1>
           <div className="inputs-cont">
-          <input type="text" name="uname" value={uname} onChange={handleChange} placeholder="Your Name"/>
-          <input type="gmail" name="email" value={email}  onChange={handleChange}  placeholder="Your Email"/>
-          <input type="text" name="number" value={number}  onChange={handleChange}  placeholder="Your Mobile No"/>
-          <textarea placeholder=" Your Message" name="msg" value={msg}  onChange={handleChange}  ></textarea>
+          <input type="text"  name="uname" autoComplete="off" value={uname} onChange={handleChange} placeholder="Your Name"/>
+          <input type="gmail" name="email" autoComplete="off" value={email}  onChange={handleChange}  placeholder="Your Email"/>
+          <input type="text" name="number" autoComplete="off" value={number}  onChange={handleChange}  placeholder="Your Mobile No"/>
+          <textarea placeholder=" Your Message" autoComplete="off" name="msg" value={msg}  onChange={handleChange}  ></textarea>
           <button onClick={handleSubmit}>Send Message</button>
           
           </div>
